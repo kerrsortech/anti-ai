@@ -117,7 +117,7 @@ function App() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-16">
             <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">The Crisis</p>
-            <h2 className="mb-6 text-3xl font-bold leading-[1.4] text-text sm:text-4xl lg:text-5xl sm:leading-[1.5]">
+            <h2 className="mb-6 text-3xl font-bold leading-[1.3] text-text text-balance sm:text-4xl lg:text-5xl sm:leading-[1.4]">
               AI Creates Perfect Fakes. Detection Can't Keep Up
             </h2>
             <p className="text-lg leading-relaxed text-text-secondary">
@@ -168,31 +168,31 @@ function App() {
               <CardContent className="pt-6">
                 <div className="mb-2 text-4xl font-bold text-primary sm:text-5xl">300%</div>
                 <p className="text-sm font-medium text-text">ITIJ</p>
-                <p className="mt-2 text-sm text-text-muted">Increase in AI-manipulated insurance fraud (Allianz, 2021-2023)</p>
+                <p className="mt-2 text-sm text-text-muted">Increase in AI-manipulated insurance fraud (Allianz)</p>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="mb-2 text-4xl font-bold text-primary sm:text-5xl">$103B</div>
-                <p className="text-sm font-medium text-text">Sift</p>
-                <p className="mt-2 text-sm text-text-muted">Annual losses from refund fraud in food delivery (2024)</p>
+                <div className="mb-2 text-4xl font-bold text-primary sm:text-5xl">83%</div>
+                <p className="text-sm font-medium text-text">Sprout.ai Survey</p>
+                <p className="mt-2 text-sm text-text-muted">Of claims handlers suspect AI manipulation in at least 5% of claims</p>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="mb-2 text-4xl font-bold text-primary sm:text-5xl">92%</div>
-                <p className="text-sm font-medium text-text">CFO.com</p>
-                <p className="mt-2 text-sm text-text-muted">Of companies experienced financial losses from deepfakes (2024)</p>
+                <div className="mb-2 text-4xl font-bold text-primary sm:text-5xl">£501M</div>
+                <p className="text-sm font-medium text-text">Association of British Insurers</p>
+                <p className="mt-2 text-sm text-text-muted">Lost to fraudulent motor claims in UK via AI-manipulated vehicle photos</p>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="pt-6">
-                <div className="mb-2 text-4xl font-bold text-primary sm:text-5xl">70%</div>
-                <p className="text-sm font-medium text-text">Insurance Journal</p>
-                <p className="mt-2 text-sm text-text-muted">Of insurance claims will be automated by 2025</p>
+                <div className="mb-2 text-4xl font-bold text-primary sm:text-5xl">15.14%</div>
+                <p className="text-sm font-medium text-text">Appriss Retail & Deloitte</p>
+                <p className="mt-2 text-sm text-text-muted">Of all retail returns involve fraud or abuse (2024)</p>
               </CardContent>
             </Card>
           </div>
@@ -268,7 +268,7 @@ function App() {
       <section className="bg-background-subtle py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-16">
-            <h2 className="mb-6 text-3xl font-bold leading-[1.4] text-text sm:text-4xl lg:text-5xl sm:leading-[1.5]">
+            <h2 className="mb-6 text-3xl font-bold leading-[1.3] text-text text-balance sm:text-4xl lg:text-5xl sm:leading-[1.4]">
               Detection That Works After the Screenshot
             </h2>
             <p className="text-lg leading-relaxed text-text-secondary">
@@ -276,65 +276,88 @@ function App() {
             </p>
           </div>
 
-          <div className="mb-16 grid gap-8 md:grid-cols-3">
-            <div className="text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl font-bold text-white">
-                1
-              </div>
-              <Upload className="mx-auto mb-4 h-12 w-12 text-primary" />
-              <h3 className="mb-2 text-xl font-semibold leading-[1.4] text-text">Upload or Integrate</h3>
-              <p className="text-text-secondary">
-                Send images through our API or upload directly to our platform. Integration takes minutes, not months.
-              </p>
-            </div>
+          <div className="mb-16 grid gap-6 md:grid-cols-3">
+            <Card className="flex flex-col text-center">
+              <CardHeader className="pb-4">
+                <div className="mb-6 flex flex-col items-center">
+                  <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary text-xl font-bold text-white">
+                    1
+                  </div>
+                  <Upload className="h-10 w-10 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Upload or Integrate</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-grow pt-0">
+                <p className="text-text-secondary leading-relaxed">
+                  Send images through our API or upload directly to our platform. Integration takes minutes, not months.
+                </p>
+              </CardContent>
+            </Card>
 
-            <div className="text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl font-bold text-white">
-                2
-              </div>
-              <Search className="mx-auto mb-4 h-12 w-12 text-primary" />
-              <h3 className="mb-2 text-xl font-semibold leading-[1.4] text-text">Pixel-Level Analysis</h3>
-              <p className="text-text-secondary">
-                We analyze the fundamental structure AI generation leaves behind, not surface markers. Our models detect artifacts invisible to human eyes and traditional tools.
-              </p>
-            </div>
+            <Card className="flex flex-col text-center">
+              <CardHeader className="pb-4">
+                <div className="mb-6 flex flex-col items-center">
+                  <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary text-xl font-bold text-white">
+                    2
+                  </div>
+                  <Search className="h-10 w-10 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Pixel-Level Analysis</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-grow pt-0">
+                <p className="text-text-secondary leading-relaxed">
+                  We analyze the fundamental structure AI generation leaves behind, not surface markers. Our models detect artifacts invisible to human eyes and traditional tools.
+                </p>
+              </CardContent>
+            </Card>
 
-            <div className="text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary text-2xl font-bold text-white">
-                3
-              </div>
-              <Zap className="mx-auto mb-4 h-12 w-12 text-primary" />
-              <h3 className="mb-2 text-xl font-semibold leading-[1.4] text-text">Instant Verdict</h3>
-              <p className="text-text-secondary">
-                Get a confidence score (0-100%) in under a second. Flag suspicious images for review or auto-reject based on your risk threshold.
-              </p>
-            </div>
+            <Card className="flex flex-col text-center">
+              <CardHeader className="pb-4">
+                <div className="mb-6 flex flex-col items-center">
+                  <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary text-xl font-bold text-white">
+                    3
+                  </div>
+                  <Zap className="h-10 w-10 text-primary" />
+                </div>
+                <CardTitle className="text-xl">Instant Verdict</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-grow pt-0">
+                <p className="text-text-secondary leading-relaxed">
+                  Get a confidence score (0-100%) in under a second. Flag suspicious images for review or auto-reject based on your risk threshold.
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
-          <div className="mb-12 grid gap-6 md:grid-cols-2">
-            <Card>
-              <CardHeader>
-                <Bot className="mb-4 h-10 w-10 text-primary" />
-                <CardTitle>Complete AI Generation</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-text-secondary">
-                  Images created entirely by AI models (Midjourney, Stable Diffusion, DALL-E, Flux, and emerging tools)
-                </p>
-              </CardContent>
-            </Card>
+          <div className="mb-12">
+            <h3 className="mb-6 text-center text-lg font-semibold text-text">
+              We Detect Images Which Are
+            </h3>
+            <div className="grid gap-6 md:grid-cols-2">
+              <Card>
+                <CardHeader>
+                  <Bot className="mb-4 h-10 w-10 text-primary" />
+                  <CardTitle>Complete AI Generation</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-text-secondary">
+                    Images created entirely by AI models (Midjourney, Stable Diffusion, DALL-E, Flux, and emerging tools)
+                  </p>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <Camera className="mb-4 h-10 w-10 text-primary" />
-                <CardTitle>AI Manipulation</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-text-secondary">
-                  Real photos edited with AI: enhanced damage, added elements, removed details, or altered content
-                </p>
-              </CardContent>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <Camera className="mb-4 h-10 w-10 text-primary" />
+                  <CardTitle>AI Manipulation</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-text-secondary">
+                    Real photos edited with AI: enhanced damage, added elements, removed details, or altered content
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -343,8 +366,8 @@ function App() {
       <section className="py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-16">
-            <h2 className="mb-6 text-3xl font-bold leading-[1.4] text-text sm:text-4xl lg:text-5xl sm:leading-[1.5]">
-              Built for Businesses Under Attack
+            <h2 className="mb-6 text-3xl font-bold leading-[1.3] text-text text-balance sm:text-4xl lg:text-5xl sm:leading-[1.4]">
+              Built for Businesses Under&nbsp;Attack
             </h2>
           </div>
 
@@ -393,10 +416,7 @@ function App() {
                   <CardTitle className="text-xl">{industry.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="mb-4 text-text-secondary">{industry.description}</p>
-                  <p className="text-sm font-medium text-text">
-                    The Threat: <span className="text-text-muted">{industry.threat}</span>
-                  </p>
+                  <p className="text-text-secondary">{industry.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -409,7 +429,7 @@ function App() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-5xl">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold leading-[1.4] text-text sm:text-4xl lg:text-5xl sm:leading-[1.5]">
+              <h2 className="mb-4 text-3xl font-bold leading-[1.3] text-text text-balance sm:text-4xl lg:text-5xl sm:leading-[1.4]">
                 Built for Scale, Designed for Simplicity
               </h2>
               <p className="mx-auto max-w-2xl text-lg text-text-secondary">
@@ -512,7 +532,7 @@ function App() {
           <div className="mx-auto max-w-5xl">
             <div className="mb-12 text-center">
               <Clock className="mx-auto mb-4 h-12 w-12 text-primary" />
-              <h2 className="mb-4 text-3xl font-bold leading-[1.4] text-text sm:text-4xl lg:text-5xl sm:leading-[1.5]">
+              <h2 className="mb-4 text-3xl font-bold leading-[1.3] text-text text-balance sm:text-4xl lg:text-5xl sm:leading-[1.4]">
                 The Window Is Closing
               </h2>
               <p className="mx-auto max-w-2xl text-lg text-text-secondary">
@@ -625,7 +645,7 @@ function App() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold leading-[1.4] text-text sm:text-4xl lg:text-5xl sm:leading-[1.5]">
+              <h2 className="mb-4 text-3xl font-bold leading-[1.3] text-text text-balance sm:text-4xl lg:text-5xl sm:leading-[1.4]">
                 Get Protected Early
               </h2>
               <p className="text-lg text-text-secondary">
@@ -741,10 +761,6 @@ function App() {
                 </CardContent>
               </Card>
             )}
-
-            <p className="mt-6 text-center text-sm text-text-muted">
-              Currently in private beta with select partners. Waitlist members will be first notified when we open for general access.
-            </p>
           </div>
         </div>
       </section>
@@ -752,7 +768,7 @@ function App() {
       {/* Footer */}
       <footer className="border-t border-border bg-background py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2">
             <div>
               <h3 className="mb-4 text-lg font-semibold text-text">About</h3>
               <p className="text-sm text-text-secondary">
@@ -760,7 +776,7 @@ function App() {
               </p>
             </div>
 
-            <div>
+            <div className="md:text-right">
               <h3 className="mb-4 text-lg font-semibold text-text">Quick Links</h3>
               <ul className="space-y-2 text-sm">
                 {['About Us', 'How It Works', 'Contact', 'Privacy Policy', 'Terms of Service'].map((link) => (
@@ -772,27 +788,10 @@ function App() {
                 ))}
               </ul>
             </div>
-
-            <div>
-              <h3 className="mb-4 text-lg font-semibold text-text">Contact</h3>
-              <ul className="space-y-2 text-sm text-text-secondary">
-                <li>
-                  <a href="mailto:contact@realsight.com" className="hover:text-primary transition-colors">
-                    contact@realsight.com
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors">
-                    <Linkedin className="h-4 w-4" />
-                    Follow us on LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
 
           <div className="mt-8 border-t border-border pt-8 text-center text-sm text-text-muted">
-            © 2024 RealSight. All rights reserved.
+            © 2025 RealSight. All rights reserved.
           </div>
         </div>
       </footer>
