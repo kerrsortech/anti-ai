@@ -88,7 +88,7 @@ function App() {
       <section className="flex min-h-screen items-start justify-center pt-20 sm:pt-24 lg:pt-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge className="mb-6">Platform Coming Soon</Badge>
+            <Badge className="mb-6 bg-orange-200/40 text-black px-4 py-1.5">platform launching soon</Badge>
             <h1 className="mb-6 text-4xl font-bold text-text sm:text-5xl lg:text-6xl" style={{ lineHeight: '1.4' }}>
               Stop AI Image Fraud Before It Costs You Millions
             </h1>
@@ -121,7 +121,7 @@ function App() {
               AI Creates Perfect Fakes. Detection Can't Keep Up
             </h2>
             <p className="text-lg leading-relaxed text-text-secondary">
-              Traditional detection relies on metadata and watermarks. One screenshot removes all of it, and fraudsters know this.
+              Traditional detection relies on metadata and watermarks.
             </p>
           </div>
 
